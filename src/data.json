@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "'Casado Tradicional'",
+    "description": "Arroz, frijoles tiernos, chicharrón frito, pico de gallo y aguacate.",
+    "price": 2.80,
+    "category": "SABOR LOCAL",
+    "image": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=600&h=400&fit=crop"
+  },
+  {
+    "id": 2,
+    "title": "Lomo Saltado",
+    "description": "Jugosos trozos de res salteados al wok con cebolla y tomate.",
+    "price": 2.90,
+    "category": "SABOR LOCAL",
+    "image": "https://images.unsplash.com/photo-1544025162-8111142154ea?w=600&h=400&fit=crop"
+  },
+  {
+    "id": 3,
+    "title": "Chifrijo",
+    "description": "Delicioso chifrijo con chicharrón, frijoles, arroz y pico de gallo.",
+    "price": 3.50,
+    "category": "SABOR LOCAL",
+    "image": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=600&h=400&fit=crop"
+  },
+  {
+    "id": 4,
+    "title": "Ceviche de Pescado",
+    "description": "Pescado fresco marinado en limón con cebolla morada, culantro y ají.",
+    "price": 4.00,
+    "category": "SABOR LOCAL",
+    "image": "https://images.unsplash.com/photo-1534938665420-4193d6d04cdf?w=600&h=400&fit=crop"
+  },
+  {
+    "id": 5,
+    "title": "Picadillo de Papa",
+    "description": "Clásico picadillo de papa con carne molida, servido con tortillas palmeadas.",
+    "price": 2.50,
+    "category": "DE LA TIERRA",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=400&fit=crop"
+  },
+  {
+    "id": 6,
+    "title": "Olla de Carne",
+    "description": "Tradicional sopa con costilla de res, yuca, papa, chayote y elote.",
+    "price": 4.50,
+    "category": "PLATOS CASEROS",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=600&h=400&fit=crop"
+  }
+]
