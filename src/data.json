@@ -13,7 +13,7 @@
     "description": "Jugosos trozos de res salteados al wok con cebolla y tomate.",
     "price": 2.90,
     "category": "SABOR LOCAL",
-    "image": "https://images.unsplash.com/photo-1544025162-8111142154ea?w=600&h=400&fit=crop"
+    "image": "https://images.unsplash.com/photo-1743201045017-57d608973dc0?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "id": 3,
@@ -29,7 +29,7 @@
     "description": "Pescado fresco marinado en limón con cebolla morada, culantro y ají.",
     "price": 4.00,
     "category": "SABOR LOCAL",
-    "image": "https://images.unsplash.com/photo-1534938665420-4193d6d04cdf?w=600&h=400&fit=crop"
+    "image": "https://images.unsplash.com/photo-1533658266890-8bd362930725?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "id": 5,
