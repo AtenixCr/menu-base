@@ -2,7 +2,7 @@ import React from 'react';
 
 const PromoCarousel = () => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
-  
+
   const promos = [
     "SABOR LOCAL",
     "2X1 EN HAMBURGUESAS",
@@ -14,19 +14,23 @@ const PromoCarousel = () => {
   React.useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % promos.length);
-    }, 3000); // Cambia cada 3 segundos
+    }, 3000);
     return () => clearInterval(timer);
   }, [promos.length]);
 
   return (
     <div className="banner-container">
       <div className="banner">
-        <div className="banner-text">{promos[currentIndex]}</div>
+        <div className="banner-overlay">
+          <span className="brand-eyebrow">SODA EL BUEN SABOR</span>
+          <div className="brand-title">{promos[currentIndex]}</div>
+          <span className="brand-subtitle">Tradición en Cada Plato</span>
+        </div>
       </div>
       <div className="banner-dots">
         {promos.map((_, index) => (
-          <div 
-            key={index} 
+          <div
+            key={index}
             className={`dot ${index === currentIndex ? 'active' : ''}`}
             onClick={() => setCurrentIndex(index)}
             style={{ cursor: 'pointer' }}

@@ -13,13 +13,34 @@ function App() {
   const [currency, setCurrency] = useState('colon');
 
   useEffect(() => {
-    // Filter the imported data based on the active tab category and search term
+    const normalizeText = (text) =>
+      (text || '')
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase();
+
+    const cleanSearch = normalizeText(searchTerm.trim());
+
     const filteredItems = menuData.filter(item => {
-      const matchesTab = activeTab === 'Todo' || (Array.isArray(item.category) ? item.category.includes(activeTab) : item.category === activeTab);
-      const matchesSearch = item.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
-                            item.description.toLowerCase().includes(searchTerm.toLowerCase());
-      return matchesTab && matchesSearch;
+      if (cleanSearch !== '') {
+        const title = normalizeText(item.title);
+        const description = normalizeText(item.description);
+        const information = normalizeText(item.information);
+        const categories = Array.isArray(item.category)
+          ? item.category.map(normalizeText).join(' ')
+          : normalizeText(item.category);
+
+        return (
+          title.includes(cleanSearch) ||
+          description.includes(cleanSearch) ||
+          information.includes(cleanSearch) ||
+          categories.includes(cleanSearch)
+        );
+      }
+
+      return activeTab === 'Todo' || (Array.isArray(item.category) ? item.category.includes(activeTab) : item.category === activeTab);
     });
+
     setMenuItems(filteredItems);
   }, [activeTab, searchTerm]);
 
