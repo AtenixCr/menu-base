@@ -223,10 +223,16 @@ body {
   border-radius: 12px;
   padding: 4px;
   gap: 2px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.tabs-container::-webkit-scrollbar {
+  display: none;
 }
 
 .tab {
-  flex: 1;
+  flex: 0 0 auto;
   text-align: center;
   padding: 10px 5px;
   font-family: 'Outfit', sans-serif;
@@ -373,4 +379,88 @@ body {
 .info-btn:hover {
   transform: scale(1.12);
   box-shadow: 0 3px 10px rgba(40, 38, 10, 0.4);
+}
+
+.currency-selector {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px 16px;
+  background: linear-gradient(to bottom, rgba(240, 226, 204, 0.95), rgba(240, 226, 204, 0.7));
+  border-bottom: 1px solid rgba(90, 60, 20, 0.12);
+  margin-bottom: 12px;
+}
+
+.currency-btn {
+  background: transparent;
+  border: 1px solid var(--accent-green);
+  color: var(--accent-green);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  transition: all 0.2s ease;
+}
+
+.currency-btn.active {
+  background: var(--accent-green);
+  color: white;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+}
+
+.modal-content {
+  background: var(--bg-parchment);
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 320px;
+  width: 90%;
+  border: 2px solid var(--accent-green);
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.modal-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.modal-text {
+  font-family: 'Outfit', sans-serif;
+  color: var(--text-mid);
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.modal-close {
+  background: var(--accent-green);
+  color: white;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.modal-close:hover {
+  background: var(--accent-green-light);
 }

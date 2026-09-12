@@ -1,50 +1,112 @@
 [
   {
     "id": 1,
-    "title": "'Casado Tradicional'",
+    "title": "Casado Tradicional",
     "description": "Arroz, frijoles tiernos, chicharrón frito, pico de gallo y aguacate.",
-    "price": 2.80,
-    "category": "SABOR LOCAL",
-    "image": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=600&h=400&fit=crop"
+    "price_dollar": 2.80,
+    "price_colon": 1400,
+    "category": ["Almuerzo", "Cena"],
+    "image": "/images/casado.jpg",
+    "information": "El casado es el plato tradicional por excelencia de Costa Rica, originado como el almuerzo preparado para los trabajadores del campo."
   },
   {
     "id": 2,
-    "title": "Lomo Saltado",
-    "description": "Jugosos trozos de res salteados al wok con cebolla y tomate.",
-    "price": 2.90,
-    "category": "SABOR LOCAL",
-    "image": "https://images.unsplash.com/photo-1743201045017-57d608973dc0?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "title": "Gallo Pinto",
+    "description": "Mezcla de arroz y frijoles condimentados con culantro, cebolla, chile dulce y salsa Lizano, servido con huevo, plátano maduro y natilla.",
+    "price_dollar": 3.00,
+    "price_colon": 1500,
+    "category": ["Desayuno"],
+    "image": "/images/gallo_pinto.jpg",
+    "information": "Es el desayuno típico nacional por excelencia, cuyo nombre hace referencia al aspecto moteado de la mezcla del arroz blanco con el frijol negro o rojo."
   },
   {
     "id": 3,
     "title": "Chifrijo",
     "description": "Delicioso chifrijo con chicharrón, frijoles, arroz y pico de gallo.",
-    "price": 3.50,
-    "category": "SABOR LOCAL",
-    "image": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=600&h=400&fit=crop"
+    "price_dollar": 3.50,
+    "price_colon": 1750,
+    "category": ["Almuerzo", "Cena"],
+    "image": "/images/chifrijo.jpg",
+    "information": "Plato de la época contemporánea que se popularizó en los bares y restaurantes de San José, ideal como boca."
   },
   {
     "id": 4,
     "title": "Ceviche de Pescado",
     "description": "Pescado fresco marinado en limón con cebolla morada, culantro y ají.",
-    "price": 4.00,
-    "category": "SABOR LOCAL",
-    "image": "https://images.unsplash.com/photo-1533658266890-8bd362930725?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "price_dollar": 4.00,
+    "price_colon": 2000,
+    "category": ["Almuerzo", "Cena"],
+    "image": "/images/ceviche.jpg",
+    "information": "Plato refrescante típico de las zonas costeras, excelente para abrir el apetito."
   },
   {
     "id": 5,
-    "title": "Picadillo de Papa",
-    "description": "Clásico picadillo de papa con carne molida, servido con tortillas palmeadas.",
-    "price": 2.50,
-    "category": "DE LA TIERRA",
-    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=400&fit=crop"
+    "title": "'Arroz con Pollo",
+    "description": "Arroz cocinado con pollo desmenuzado, achiote, vegetales mixtos y olores, tradicionalmente acompañado de papas fritas y ensalada de caracolitos.",
+    "price_dollar": 5.00,
+    "price_colon": 2500,
+    "category": ["Almuerzo", "Cena", "Festividades"],
+    "image": "/images/arroz_con_pollo.jpg",
+    "information": "El plato festivo por excelencia en Costa Rica, infaltable en cumpleaños, turnos, rezos del Niño y cualquier celebración familiar."
   },
   {
     "id": 6,
     "title": "Olla de Carne",
     "description": "Tradicional sopa con costilla de res, yuca, papa, chayote y elote.",
-    "price": 4.50,
-    "category": "PLATOS CASEROS",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=600&h=400&fit=crop"
+    "price_dollar": 4.50,
+    "price_colon": 2250,
+    "category": ["Almuerzo", "Cena"],
+    "image": "/images/olla_carne.jpg",
+    "information": "La sopa más querida de Costa Rica, elaborada a fuego lento con abundantes verduras frescas."
+  },
+  {
+    "id": 7,
+    "title": "Tamal de Cerdo",
+    "description": "Masa de maíz rellena de arroz, carne de cerdo, zanahoria, chile dulce y vainica, envuelta y cocinada en hojas de plátano.",
+    "price_dollar": 3.00,
+    "price_colon": 1500,
+    "category": ["Desayuno", "Almuerzo", "Cena", "Festividades"],
+    "image": "/images/tamal.jpg",
+    "information": "Aunque se puede encontrar todo el año, es el platillo indispensable de la época navideña, preparado en familia en la tradicional 'tamaleada'."
+  },
+  {
+    "id": 9,
+    "title": "Rompope",
+    "description": "Bebida dulce y cremosa a base de leche, yemas de huevo, azúcar y especias como vainilla, canela y nuez moscada, frecuentemente con un toque de ron o guaro.",
+    "price_dollar": 4.00,
+    "price_colon": 2000,
+    "category": ["Bebidas", "Festividades"],
+    "image": "/images/rompope.jpg",
+    "information": "Es la bebida tradicional por excelencia de la época navideña y de fin de año en Costa Rica, perfecta para compartir en familia y acompañar el queque navideño."
+  },
+  {
+    "id": 10,
+    "title": "Pepsi",
+    "description": "Bebida carbonatada refrescante.",
+    "price_dollar": 1.50,
+    "price_colon": 750,
+    "category": ["Bebidas"],
+    "image": "/images/pepsi.jpg",
+    "information": "Ideal para acompañar cualquiera de nuestros platillos."
+  },
+  {
+    "id": 11,
+    "title": "Coca Cola",
+    "description": "Bebida carbonatada clásica.",
+    "price_dollar": 1.50,
+    "price_colon": 750,
+    "category": ["Bebidas"],
+    "image": "/images/coca_cola.jpg",
+    "information": "El sabor clásico que a todos les encanta."
+  },
+  {
+    "id": 12,
+    "title": "Frescos Naturales",
+    "description": "Bebidas naturales de frutas frescas de temporada.",
+    "price_dollar": 2.00,
+    "price_colon": 1000,
+    "category": ["Bebidas"],
+    "image": "/images/fresco_natural.jpg",
+    "information": "Refrescantes y llenos de sabor natural, preparados al momento."
   }
 ]

@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const MenuItemsGrid = ({ menuItems }) => {
+const MenuItemsGrid = ({ menuItems, currency }) => {
+  const [selectedInfo, setSelectedInfo] = useState(null);
+
+  const getPriceDisplay = (item) => {
+    if (currency === 'colon') {
+      return `₡${item.price_colon}`;
+    }
+    return `$${item.price_dollar.toFixed(2)}`;
+  };
+
   return (
     <div className="menu-grid">
       {menuItems.map(item => (
@@ -10,12 +19,22 @@ const MenuItemsGrid = ({ menuItems }) => {
             <h3 className="card-title">{item.title}</h3>
             <p className="card-desc">{item.description}</p>
             <div className="card-footer">
-              <span className="card-price">${item.price.toFixed(2)}</span>
-              <button className="info-btn">i</button>
+              <span className="card-price">{getPriceDisplay(item)}</span>
+              <button className="info-btn" onClick={() => setSelectedInfo(item)}>i</button>
             </div>
           </div>
         </div>
       ))}
+
+      {selectedInfo && (
+        <div className="modal-overlay" onClick={() => setSelectedInfo(null)}>
+          <div className="modal-content" onClick={e => e.stopPropagation()}>
+            <h3 className="modal-title">{selectedInfo.title}</h3>
+            <p className="modal-text">{selectedInfo.information}</p>
+            <button className="modal-close" onClick={() => setSelectedInfo(null)}>Cerrar</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

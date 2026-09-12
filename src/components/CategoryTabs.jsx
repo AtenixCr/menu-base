@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CategoryTabs = ({ activeTab, setActiveTab }) => {
-  const categories = ['SABOR LOCAL', 'DE LA TIERRA', 'PLATOS CASEROS'];
+  const categories = ['Todo', 'Desayuno', 'Almuerzo', 'Cena', 'Festividades', 'Bebidas'];
   
   return (
     <div className="tabs-container">
