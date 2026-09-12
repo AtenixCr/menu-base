@@ -5,7 +5,10 @@
     "description": "Arroz, frijoles tiernos, chicharrón frito, pico de gallo y aguacate.",
     "price_dollar": 2.80,
     "price_colon": 1400,
-    "category": ["Almuerzo", "Cena"],
+    "category": [
+      "Almuerzo",
+      "Cena"
+    ],
     "image": "/images/casado.jpg",
     "information": "El casado es el plato tradicional por excelencia de Costa Rica, originado como el almuerzo preparado para los trabajadores del campo."
   },
@@ -15,7 +18,9 @@
     "description": "Mezcla de arroz y frijoles condimentados con culantro, cebolla, chile dulce y salsa Lizano, servido con huevo, plátano maduro y natilla.",
     "price_dollar": 3.00,
     "price_colon": 1500,
-    "category": ["Desayuno"],
+    "category": [
+      "Desayuno"
+    ],
     "image": "/images/gallo_pinto.jpg",
     "information": "Es el desayuno típico nacional por excelencia, cuyo nombre hace referencia al aspecto moteado de la mezcla del arroz blanco con el frijol negro o rojo."
   },
@@ -25,7 +30,10 @@
     "description": "Delicioso chifrijo con chicharrón, frijoles, arroz y pico de gallo.",
     "price_dollar": 3.50,
     "price_colon": 1750,
-    "category": ["Almuerzo", "Cena"],
+    "category": [
+      "Almuerzo",
+      "Cena"
+    ],
     "image": "/images/chifrijo.jpg",
     "information": "Plato de la época contemporánea que se popularizó en los bares y restaurantes de San José, ideal como boca."
   },
@@ -35,17 +43,24 @@
     "description": "Pescado fresco marinado en limón con cebolla morada, culantro y ají.",
     "price_dollar": 4.00,
     "price_colon": 2000,
-    "category": ["Almuerzo", "Cena"],
+    "category": [
+      "Almuerzo",
+      "Cena"
+    ],
     "image": "/images/ceviche.jpg",
     "information": "Plato refrescante típico de las zonas costeras, excelente para abrir el apetito."
   },
   {
     "id": 5,
-    "title": "'Arroz con Pollo",
+    "title": "Arroz con Pollo",
     "description": "Arroz cocinado con pollo desmenuzado, achiote, vegetales mixtos y olores, tradicionalmente acompañado de papas fritas y ensalada de caracolitos.",
     "price_dollar": 5.00,
     "price_colon": 2500,
-    "category": ["Almuerzo", "Cena", "Festividades"],
+    "category": [
+      "Almuerzo",
+      "Cena",
+      "Festividades"
+    ],
     "image": "/images/arroz_con_pollo.jpg",
     "information": "El plato festivo por excelencia en Costa Rica, infaltable en cumpleaños, turnos, rezos del Niño y cualquier celebración familiar."
   },
@@ -55,7 +70,10 @@
     "description": "Tradicional sopa con costilla de res, yuca, papa, chayote y elote.",
     "price_dollar": 4.50,
     "price_colon": 2250,
-    "category": ["Almuerzo", "Cena"],
+    "category": [
+      "Almuerzo",
+      "Cena"
+    ],
     "image": "/images/olla_carne.jpg",
     "information": "La sopa más querida de Costa Rica, elaborada a fuego lento con abundantes verduras frescas."
   },
@@ -65,7 +83,12 @@
     "description": "Masa de maíz rellena de arroz, carne de cerdo, zanahoria, chile dulce y vainica, envuelta y cocinada en hojas de plátano.",
     "price_dollar": 3.00,
     "price_colon": 1500,
-    "category": ["Desayuno", "Almuerzo", "Cena", "Festividades"],
+    "category": [
+      "Desayuno",
+      "Almuerzo",
+      "Cena",
+      "Festividades"
+    ],
     "image": "/images/tamal.jpg",
     "information": "Aunque se puede encontrar todo el año, es el platillo indispensable de la época navideña, preparado en familia en la tradicional 'tamaleada'."
   },
@@ -75,7 +98,10 @@
     "description": "Bebida dulce y cremosa a base de leche, yemas de huevo, azúcar y especias como vainilla, canela y nuez moscada, frecuentemente con un toque de ron o guaro.",
     "price_dollar": 4.00,
     "price_colon": 2000,
-    "category": ["Bebidas", "Festividades"],
+    "category": [
+      "Bebidas",
+      "Festividades"
+    ],
     "image": "/images/rompope.jpg",
     "information": "Es la bebida tradicional por excelencia de la época navideña y de fin de año en Costa Rica, perfecta para compartir en familia y acompañar el queque navideño."
   },
@@ -85,7 +111,9 @@
     "description": "Bebida carbonatada refrescante.",
     "price_dollar": 1.50,
     "price_colon": 750,
-    "category": ["Bebidas"],
+    "category": [
+      "Bebidas"
+    ],
     "image": "/images/pepsi.jpg",
     "information": "Ideal para acompañar cualquiera de nuestros platillos."
   },
@@ -95,7 +123,9 @@
     "description": "Bebida carbonatada clásica.",
     "price_dollar": 1.50,
     "price_colon": 750,
-    "category": ["Bebidas"],
+    "category": [
+      "Bebidas"
+    ],
     "image": "/images/coca_cola.jpg",
     "information": "El sabor clásico que a todos les encanta."
   },
@@ -105,7 +135,9 @@
     "description": "Bebidas naturales de frutas frescas de temporada.",
     "price_dollar": 2.00,
     "price_colon": 1000,
-    "category": ["Bebidas"],
+    "category": [
+      "Bebidas"
+    ],
     "image": "/images/fresco_natural.jpg",
     "information": "Refrescantes y llenos de sabor natural, preparados al momento."
   }
