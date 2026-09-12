@@ -16,17 +16,20 @@ function App() {
     <div className="app-container">
       {/* Header */}
       <header className="header">
-        <div className="brand-title">SODA EL BUEN SABOR</div>
         <div className="search-bar">
           <Search size={18} />
           <input type="text" placeholder="Buscar platos o ingredientes..." />
         </div>
       </header>
 
-      {/* Banner */}
+      {/* Banner*/}
       <div className="banner-container">
         <div className="banner">
-          <div className="banner-text">SABOR LOCAL</div>
+          <div className="banner-overlay">
+            <div className="brand-eyebrow">Soda Típica</div>
+            <div className="brand-title">EL BUEN SABOR</div>
+            <div className="brand-subtitle">Comida casera con sazón tico</div>
+          </div>
         </div>
         <div className="banner-dots">
           <div className="dot active"></div>
@@ -40,7 +43,7 @@ function App() {
       {/* Tabs */}
       <div className="tabs-container">
         {['SABOR LOCAL', 'DE LA TIERRA', 'PLATOS CASEROS'].map(tab => (
-          <div 
+          <div
             key={tab}
             className={`tab ${activeTab === tab ? 'active' : ''}`}
             onClick={() => setActiveTab(tab)}
